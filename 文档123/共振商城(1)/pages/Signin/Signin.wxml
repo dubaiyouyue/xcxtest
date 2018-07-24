@@ -1,0 +1,19 @@
+<!--pages/Sign in/Sign in.wxml-->
+<view class='kuang'>
+          <form>
+                    <view class='dg'>
+                                <view class='tp'><image src='../../images/yonghu.png' mode='widthFix'></image></view>
+                                <input placeholder-class='hover' placeholder="请输入用户名" ></input>
+                                <button>发送验证码</button>
+                    </view>
+
+                    <view class='dg'>
+                                <view class='tp'><image src='../../images/mima.png' mode='widthFix'></image></view>
+                                <input placeholder-class='hover' placeholder="请输入密码" ></input>
+                    </view>
+
+                    <view class='denglu'>
+                                <button>登录</button>
+                    </view>
+            </form>
+</view>

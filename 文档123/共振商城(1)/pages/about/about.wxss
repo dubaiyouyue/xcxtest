@@ -1,0 +1,171 @@
+/* pages/about/about.wxss */
+
+.about{
+  width: 100%;
+  overflow: hidden;
+   padding-bottom: 60px;
+}
+/*-------------------标题 开始---------------------*/
+.about .title{
+  width: 90%;
+  margin: auto;
+  height:70px;
+
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+.about .title .wz{
+  text-align: center;
+  margin: 0 5px;
+}
+.about .title .wz .yw{
+color: #545353;
+font-family: '微软雅黑';
+font-size:40rpx;
+font-weight: 100;
+padding: 0 5px;
+display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+ -webkit-line-clamp:1;
+}
+.about .title .wz .zw{
+color: #545353;
+font-family: '微软雅黑';
+font-size:45rpx;
+}
+.about .title .zuo{
+  overflow: hidden;
+  width:60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .title .zuo .xian{
+  width:80%;
+  height: 1px;
+  background: #d0d0d0;
+  margin-top: -65rpx; 
+  margin-left: -5px;
+}
+.about .title .zuo .yuan{
+  font-family: '微软雅黑';
+  font-size: 15rpx;
+  color: #d0d0d0;
+  margin-top: -65rpx;
+  margin-left: 5px;
+}
+
+.about .title .you{
+  overflow: hidden;
+  width:60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .title .you .xian{
+  width:80%;
+  height: 1px;
+  background: #d0d0d0;
+  margin-top:-65rpx; 
+  margin-left:5px;
+}
+.about .title .you .yuan{
+ font-family: '微软雅黑';
+  font-size:15rpx;
+  color: #d0d0d0;
+  margin-top:-65rpx;
+  margin-left: 5px;
+}
+
+/*-------------------导航 开始---------------------*/
+.nav{
+  width: 100%;
+}
+
+.nav .meiyi{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav .meiyi .dg{
+ width: 25%;
+ display: table-cell;
+ vertical-align: middle;
+ text-align: center;
+}
+.nav .meiyi .dg image{
+  width:80%;
+  border-bottom: 1px #d0d0d0 solid;
+}
+
+.nav .meiyi .dg text{
+  margin-top: 10rpx;
+  display: block;
+  color: #5b5b5b;
+  font-family: "微软雅黑";
+  font-size:30rpx;
+}
+
+
+
+
+
+/*-------------------内容 开始---------------------*/
+.about .nr{
+  width: 90%;
+  margin: auto;
+  margin-top: 70rpx;
+}
+.about .nr image{
+  width: 100%;
+  margin: auto;
+  margin-bottom:50rpx;
+}
+.about .nr text{
+  color: #5b5b5b;
+  font-family: '微软雅黑';
+  font-size:30rpx;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

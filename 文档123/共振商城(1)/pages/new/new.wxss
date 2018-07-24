@@ -1,0 +1,15 @@
+/* pages/new/new.wxss */
+
+/*默认*/
+.aasss{width: 30px;height: 30px;background: red;display: block;}
+
+/*选中的时候*/
+.aasssxz{width: 30px;height: 30px;display: block;background: url(https://ssl.resonance.net.cn/up/upload/22261515060033.png);}
+
+
+
+
+.dahezi{
+  width: 100%;
+  
+}

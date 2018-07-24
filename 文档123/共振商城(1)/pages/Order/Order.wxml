@@ -1,0 +1,129 @@
+<!--pages/Order/Order.wxml-->
+<view class='daohang'>
+
+            
+            <view class="daohangone hover-class='hover'">
+            <navigator url='/pages/Order/Order'  open-type='navigate'>
+                      <text>全部</text>
+            </navigator>
+            </view>
+           
+            
+            <view class='daohangone'>
+            <navigator url='/pages/Order/Order'  open-type='navigate'>
+                      <text>未支付</text>
+             </navigator>         
+            </view>
+            
+
+            <view class='daohangone'>
+            <navigator url='/pages/Order/Order'  open-type='navigate'>
+                      <text>已完成</text>
+            </navigator>          
+            </view>
+
+            <view class='daohangone no' >
+            <navigator url='/pages/Order/Order'  open-type='navigate'>
+                      <text>已删除</text>
+            </navigator>          
+            </view>
+</view>
+
+<!--未完成订单-->
+
+<view class='top'>
+          <view class='bianhao'>
+                    <text>订单编号：123456789000</text> 
+          </view> 
+          <view class='weizhifu'>
+                    <text>未支付</text>
+          </view>
+</view>
+<view class='dingdan'>
+          <view class='xuanze'></view>
+          <view class='tu'>
+                    <image src='../../images/chanpin.jpg' mode='widthFix'></image>
+          </view>
+          <view class='text'>
+                    <view class='text-one'>
+                                <text>精品案例套</text>
+                                 <text class='jiaqian'>￥888</text>
+                    </view>
+                    <view class='text-two'>
+                              <text>描述产品的功能特性用法好处</text>
+                    </view>
+
+                    <navigator url='/pages/Paymentorder/Paymentorder'  open-type="navigate">
+                    <view class='text-three'>
+                              <view class='zhifu'>
+                                      <text>去支付</text>
+                              </view>
+                             
+                    </view>
+                    </navigator>
+          </view>
+</view>
+
+<!--已经删订单-->
+
+<view class='top'>
+          <view class='bianhao'>
+                    <text>订单编号：123456789000</text> 
+          </view> 
+          <view class='weizhifu'>
+                    <text>已删除</text>
+          </view>
+</view>
+<view class='dingdan'>
+          <view class='xuanze'></view>
+          <view class='tu'>
+                    <image src='../../images/chanpin.jpg' mode='widthFix'></image>
+          </view>
+          <view class='text'>
+                    <view class='text-one'>
+                                <text>精品案例套</text>
+                                 <text class='jiaqian'>￥888</text>
+                    </view>
+                    <view class='text-two'>
+                              <text>描述产品的功能特性用法好处</text>
+                    </view>
+                    <view class='text-three'>
+                              <view class='zhifu'>
+                                      <text>重新购买</text>
+                              </view>
+                             
+                    </view>
+          </view>
+</view>
+
+<!--完成订单-->
+
+<view class='top'>
+          <view class='bianhao'>
+                    <text>订单编号：123456789000</text> 
+          </view> 
+          <view class='weizhifu'>
+                    <text>已完成</text>
+          </view>
+</view>
+<view class='dingdan'>
+          <view class='xuanze'></view>
+          <view class='tu'>
+                    <image src='../../images/chanpin.jpg' mode='widthFix'></image>
+          </view>
+          <view class='text'>
+                    <view class='text-one'>
+                                <text>精品案例套</text>
+                                 <text class='jiaqian'>￥888</text>
+                    </view>
+                    <view class='text-two'>
+                              <text>描述产品的功能特性用法好处</text>
+                    </view>
+                    <view class='text-three'>
+                              <view class='zhifu'>
+                                      <text>再来一单</text>
+                              </view>
+                             
+                    </view>
+          </view>
+</view>

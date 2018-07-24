@@ -1,0 +1,8 @@
+<!--pages/classification/classification.wxml-->
+<view class='classification'>
+  <view class='ssk'>
+    <view class='kuang'>
+      <input class='input' placeholder-class="jj" placeholder="请输入您想搜索的"/>
+    </view>
+  </view>
+</view>

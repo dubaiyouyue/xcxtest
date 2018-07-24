@@ -1,0 +1,118 @@
+<!--pages/Payment order/Payment order.wxml-->
+<view class='zhifudingdan'>
+
+  <view class='top'>
+    <view class='bianhao'>
+      <text>订单编号：123456789000</text>
+    </view>
+   
+  </view>
+  <view class='dingdan'>
+    <view class='tu'>
+      <image src='../../images/chanpin.jpg' mode='widthFix'></image>
+    </view>
+    <view class='text'>
+      <view class='text-one'>
+        <text>精品案例套</text>
+        
+      </view>
+      <view class='text-two'>
+        <text>描述产品的功能特性用法好处</text>
+      </view>
+      <view class='text-three'>
+        <text class='jiaqian'>￥888</text>
+
+      </view>
+    </view>
+  </view>
+
+  <view class='top'>
+    <view class='bianhao'>
+      <text>订单编号：123456789000</text>
+    </view>
+   
+  </view>
+  <view class='dingdan'>
+    <view class='tu'>
+      <image src='../../images/chanpin.jpg' mode='widthFix'></image>
+    </view>
+    <view class='text'>
+      <view class='text-one'>
+        <text>精品案例套</text>
+        
+      </view>
+      <view class='text-two'>
+        <text>描述产品的功能特性用法好处</text>
+      </view>
+      <view class='text-three'>
+        <text class='jiaqian'>￥888</text>
+
+      </view>
+    </view>
+  </view>
+
+
+  <view class='top'>
+    <view class='bianhao'>
+      <text>订单编号：123456789000</text>
+    </view>
+   
+  </view>
+  <view class='dingdan'>
+    <view class='tu'>
+      <image src='../../images/chanpin.jpg' mode='widthFix'></image>
+    </view>
+    <view class='text'>
+      <view class='text-one'>
+        <text>精品案例套</text>
+        
+      </view>
+      <view class='text-two'>
+        <text>描述产品的功能特性用法好处</text>
+      </view>
+      <view class='text-three'>
+        <text class='jiaqian'>￥888</text>
+
+      </view>
+    </view>
+  </view>
+
+
+  
+
+  <view class='xinzeng'>
+          <text>收货地址</text>
+          <image class='hei' src='../../images/heijiantou.png' mode='widthFix'></image>
+</view>
+
+<view class='dizhi'>
+            <view class='neir'>
+    
+                      <view class='right'>
+                                <view class='mingzi'>
+                                          <text>南宁共振</text>
+                                </view>
+                                <view class='dianhua'>
+                                          <text>0771-5508889</text>
+                                </view>
+                                <view class='xiangxi'>
+                                          <text>南宁市青秀区中山路66号金外滩商务大夏1301</text>
+                                </view>
+                      </view>
+            </view>     
+           
+</view>
+
+<view class='jiesuan'>
+          <view class='text'>
+                    <text>总计：</text>       
+                    <text class='qian'>￥999999</text>   
+          </view>
+          <view class='button'>
+                    <button type='primary'>结算（99）</button>
+                    <text></text>
+          </view>
+</view>
+
+
+</view>

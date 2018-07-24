@@ -1,0 +1,58 @@
+/* pages/Personal center/Personal center.wxss */
+
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #efeff4;  
+}  
+
+.top{
+background:url('https://ssl.resonance.net.cn/up/upload/49721514971011.png ');
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center center; 
+width:100%; 
+position: relative;
+}
+.top .top-content{
+  width: 100%;
+  padding: 80rpx 0;
+  display: flex;
+  align-items: center;/*  定于容器纵轴的中心*/
+}
+
+.top .top-content .tupian{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 40rpx;
+}
+
+.top .top-content text{
+  margin-left:40rpx;
+  width: 68%;
+  font-family: '微软雅黑';
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.top .top-content .jiantou{
+  position: absolute;
+  right: 40rpx;
+}
+
+.row{
+  padding: 30rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #cccccc;
+  margin-bottom: 10rpx;
+}
+
+.row text{
+  margin-left: 20rpx;
+  font-family: '微软雅黑';
+  font-size: 30rpx;
+  color: #666666;
+}
+

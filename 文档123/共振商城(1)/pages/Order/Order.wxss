@@ -1,0 +1,131 @@
+/* pages/Order/Order.wxss */
+
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #efeff4;  
+}  
+
+text{
+  font-family: '微软雅黑';
+}
+
+.daohang{
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  display: flex;
+  border-bottom:1px solid #e5e5e5;
+}
+
+.daohang .daohangone{
+width: 25%;
+height: 100%;
+font-family: '微软雅黑';
+font-size: 32rpx;
+color: #666;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.daohang .no{
+  border-right: none;
+}
+
+.daohang .hover{
+  background: #e40000;
+  color: #fff;
+}
+
+
+/*订单编号和 状态*/
+
+.top{
+  width: 100%;
+  height: 70rpx;
+  background-color:#fff;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-end;
+  font-family: '微软雅黑';
+  font-size: 20rpx;
+}
+
+.top .bianhao{
+  padding-left: 140rpx;
+  color: #666666;
+}
+
+.top .weizhifu{
+padding-right: 40rpx;
+color:#e40000;
+}
+
+/**订单详情*/
+
+
+.dingdan{
+  width: 100%;
+  height: 260rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+}
+
+.dingdan .xuanze{
+  width: 60rpx;
+  height: 60rpx;
+  background-color: orange;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+
+.dingdan .tu image{
+  width: 260rpx;
+  margin-right: 20rpx;
+}
+
+.dingdan .text{
+  width: 280rpx;
+  height: 170rpx;
+}
+
+.dingdan .text .text-one{
+  line-height: 20rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content:space-between;
+  font-size: 32rpx;
+}
+
+.dingdan .text .text-one .jiaqian{
+  color: #e40000;
+  font-weight: bold;
+}
+
+.dingdan .text .text-two{
+  height: 90rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.dingdan .text .text-three{
+  height:54rpx;
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-end;  /*水平方向的右边*/
+}
+
+.dingdan .text .text-three .zhifu{
+  width: 140rpx;
+  height: 54rpx;
+  background-color: #e40000;
+  color: #fff;
+  text-align: center;
+  line-height: 54rpx;
+}
+
+

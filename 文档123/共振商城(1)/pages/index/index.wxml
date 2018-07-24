@@ -1,0 +1,216 @@
+<!--index.wxml-->
+
+
+<!-------------banner 开始-------------->
+<swiper class="swiper-box"  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" 
+  indicator-dots="true" 
+  indicator-color="#dcdcdc" 
+  indicator-active-color='#f42322'
+  style="height:{{imgheightsheight}}px;">
+  <block wx:for="{{imgUrls}}"><!--indicator-dots="true"轮播点；indicator-color="RED"轮播点的颜色；indicator-active-color='#0000'轮播点当前的颜色-->
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="100%" bindload="imageLoad" style="width:100%;height:{{imgheightsheight}}px;" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-------------banner 结束-------------->
+
+
+<view class="index" style="background:url('https://hhh.liangtianmei.com/images/bjjj.png');">
+  <!-------------二级导航 开始-------------->
+  <view class="xian"></view>
+  <view class="xian_o"></view>
+  <view class="nav">
+   <view class=" fenlei">
+    <navigator url='/pages/about/about' open-type="navigate">
+      <image src="../../images/1_15.png" mode="widthFix" ></image> \r\n
+      <text>关于我们</text>
+    </navigator>
+   </view>
+
+   <view class=" fenlei">
+    <navigator url='/pages/Service/Service' open-type="navigate">
+      <image src="../../images/1_17.png" mode="widthFix"></image> \r\n
+      <text>服务范围</text>
+    </navigator>
+   </view>
+
+   <view class=" fenlei">
+    <navigator url='/pages/case/case' open-type="navigate">
+      <image src="../../images/1_19.png" mode="widthFix" ></image>\r\n
+      <text>案例分享</text>
+    </navigator>
+   </view>
+
+   <view class=" fenlei">
+    <navigator url='/pages/contact/contact' open-type="navigate">
+      <image src="../../images/1_21.png" mode="widthFix" ></image>\r\n
+      <text>联系我们</text>
+    </navigator>
+   </view>
+  </view>
+  <view class="xian"></view>
+  <view class="xian_o"></view>
+  <!-------------二级导航 结束-------------->
+
+
+  <!-------------成功案例 开始-------------->
+  <view class="case">
+
+    <!--------------标题-------------------->
+    <view class="title">
+      <text class="zw">成功案例</text>
+      <image class="tp" src="../../images/index1.png" mode="widthFix"></image>
+      <text class="yw">SUCCESS STORIES</text>
+    </view>
+
+    <!--------------图片-------------------->
+    <view class="anli">
+      <navigator class="lii" url="/pages/details/details" open-type="navigate">
+        <image src="../../images/1_03.png" mode="widthFix"></image>
+      </navigator>
+
+      <navigator class="lii" url="/pages/details/details" open-type="navigate" >
+        <image src="../../images/1_03.png" mode="widthFix"></image>
+      </navigator>
+
+    </view>
+
+    <view class="anli">
+      <navigator class="lii" url="/pages/details/details" open-type="navigate">
+        <image src="../../images/1_03.png" mode="widthFix"></image>
+      </navigator>
+
+      <navigator class="lii" url="/pages/details/details" open-type="navigate">
+        <image src="../../images/1_03.png" mode="widthFix"></image>
+      </navigator>
+
+    </view>
+
+    <!--------------查看更多-------------------->
+    <view class="more">
+      <view class="xian"></view>
+        <navigator class="an" url='/pages/case/case' open-type="navigate">
+          <image src="../../images/in4.png" mode="widthFix"></image>
+        </navigator>
+    </view>
+
+  </view>
+  <!-------------成功案例 结束-------------->
+
+
+  <!--------------服务范围 开始-------------------->
+  <view class="service">
+    <view class="title">
+        <text class="zw">服务范围</text>
+        <image class="tp" src="../../images/index1.png" mode="widthFix"></image>
+        <text class="yw">SERVICE SCOPE</text>
+    </view>
+
+    <image style="width:100%;" src="../../images/index2.png" mode="widthFix"></image>
+
+    <view class="pinpai">
+
+
+      <navigator url='/pages/Service/Service' open-type="navigate">
+        <view class="fenl" style="background:url('https://hhh.liangtianmei.com/images/index6.png');background-repeat:no-repeat;background-size:cover;background-position:center center;">
+          <text class="zw">品牌策划\n</text>
+          <text class="yw">Brand planning</text>
+        </view>
+      </navigator>
+
+      <navigator url='/pages/Service/Service' open-type="navigate">
+        <view class="fenl" style="background:url('https://hhh.liangtianmei.com/images/index6.png');background-repeat:no-repeat;background-size:cover;background-position:center center;">
+          <text class="zw">品牌设计\n</text>
+          <text class="yw">Brand Design</text>
+        </view>
+      </navigator>
+
+      <navigator url='/pages/Service/Service' open-type="navigate">
+        <view class="fenl" style="background:url('https://hhh.liangtianmei.com/images/index6.png');background-repeat:no-repeat;background-size:cover;background-position:center center;">
+          <text class="zw">品牌推广\n</text>
+          <text class="yw">Brand Promotion</text>
+        </view>
+      </navigator>
+
+    </view>
+
+    <image style="width:100%;" src="../../images/index3.png" mode="widthFix"></image>
+  </view>
+  <!--------------服务范围 结束-------------------->
+
+  <!--------------关于我们 开始-------------------->
+    <view class='about'>
+      <navigator url='/pages/about/about' open-type="navigate">
+        <view class='title'>
+          <text class='zw'>关于我们\n</text>
+          <text class='yw'>ABOUT US\n</text>
+        </view>
+
+        <text  class='ypwz'>广西南宁共振广告有限公司，2008年成立于南宁，是一家以“品牌咨询+品牌设计+品牌策划+品牌落地”于一体的品牌服务平台，通过360°全景式纵深品牌打造，从品牌标识设计、VI设计、空间设计、包装、海报等多维度构建完善的品牌价值
+        </text>
+      </navigator>
+    </view>
+  <!--------------关于我们 结束-------------------->
+
+
+
+  
+</view>
+
+<!--<view class='buttom' style='display:none;'>
+    <view class='dg' style="background:url('https://ssl.resonance.net.cn/up/upload/26701514527905.png');background-repeat:no-repeat;background-size:100%;background-position:center center;">
+      <image src='../../images/in14.png' mode='widthFix'></image>
+      <text>首页</text>
+    </view>
+
+    <view class='dg' style="background:url('https://ssl.resonance.net.cn/up/upload/26701514527905.png');background-repeat:no-repeat;background-size:100%;background-position:center center;">
+      <image src='../../images/in14.png' mode='widthFix'></image>
+      <text>首页</text>
+    </view>
+
+    <view class='dg' style="background:url('https://ssl.resonance.net.cn/up/upload/26701514527905.png');background-repeat:no-repeat;background-size:100%;background-position:center center;">
+      <image src='../../images/in14.png' mode='widthFix'></image>
+      <text>首页</text>
+    </view>
+
+    <view class='dg' style="background:url('https://ssl.resonance.net.cn/up/upload/26701514527905.png');background-repeat:no-repeat;background-size:100%;background-position:center center;">
+      <image src='../../images/in14.png' mode='widthFix'></image>
+      <text>首页</text>
+    
+    </view>
+</view>-->
+
+
+
+
+
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

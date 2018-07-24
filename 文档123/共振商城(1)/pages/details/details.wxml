@@ -1,0 +1,16 @@
+<!--pages/details/details.wxml-->
+<view class='det'>
+  <image src='../../images/tuijian01.jpg' mode='widthFix'></image>
+  <text class='biaot'>新影响华文文化创意\n</text>
+  <text class='rq'>2017-6-8\n</text>
+  <text class='neir'>广西新影响华文文化创意有限公司，创立于2006年，隶属新影响文化投资集团，中国创意50强，曾获中国广告节长城奖金奖，是广西“文化产业示范基地”。擅长集结各类优秀资源，在品牌建设、整合营销、公关活动、创</text>
+</view>
+
+
+
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />

@@ -1,0 +1,317 @@
+/**index.wxss**/
+
+.index{
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+.index .xian{ width: 100%; height: 2px; background:#ffffff; margin-top:20px;}
+.index .xian_o{ width: 100%; height: 1px; background: #dedede; margin-bottom:20px;}
+
+/*----------------------- 导航 开始------------------------*/
+.index .nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.index .nav .fenlei{
+  width: 25%;
+  align-items:center;/*----display:flex;flex-direction:column;align-items:center; 给大盒子（文字居中）----*/
+}
+
+.index .nav .fenlei navigator{
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.index .nav .fenlei navigator image{
+ width: 80%;
+ text-align: center;
+}
+
+.index .nav .fenlei navigator text{
+  color:#636363;
+   font-family: '微软雅黑';
+   font-size:0.8rem;
+   width: 80%;
+   text-align: center;/*----text-align: center; 给文字盒子（文字居中）----*/
+}
+
+
+/*----------------------- 成功案例 开始------------------------*/
+.index .case{ 
+  margin: 0 10px;
+  }
+.index .case .title{
+ 
+   line-height: 20px;
+   margin-bottom:30px;
+   margin-top: 50px;
+
+   display:flex;
+  flex-direction:row;
+ 
+}
+.index .case .title .zw{
+  color:#5d5d5c;
+   font-family:"微软雅黑";
+   font-size:20px;
+   font-weight:500;
+   margin-top: -10px;
+   float: left;
+}
+.index .case .title .yw{
+  color:#5d5d5c;
+  font-family:"微软雅黑";
+  font-size:20px;
+  font-weight:100;
+ 
+  margin-top:-15rpx;
+   float: left;
+   -webkit-line-clamp:1;
+  overflow:hidden;
+display:-webkit-box;
+word-break:break-all;
+text-overflow:ellipsis;
+-webkit-box-orient:vertical;
+  
+   
+   
+}
+.index .case .title .tp{
+   width: 40rpx;
+   margin-top: -18rpx;
+    float: left;
+  
+   
+  
+}
+
+.index .case .anli{
+  width: 100%;
+ display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:5px;
+}
+
+.index .case .anli .lii{
+  width:50%;
+}
+.index .case .anli .lii image{
+   width: 95%;
+}
+
+.index .case .more{
+  width: 100%;
+}
+.index .case .more .an{
+  width: 100px;
+  margin: auto;
+  margin-bottom:40px;
+}
+.index .case .more .an image{
+  width: 100%;
+  
+}
+
+/*------------------------------服务范围 开始-----------------------------------*/
+.index .service{
+   margin: 0 10px;
+   margin-bottom: 30px;
+}
+.index .service .title{
+   position:relative;
+   line-height: 20px;
+   margin-bottom:20px;
+   margin-top:20px;
+
+   display:flex;
+  flex-direction:row;
+ 
+}
+
+.index .service .title .zw{
+  color:#5d5d5c;
+   font-family:"微软雅黑";
+   font-size:20px;
+   font-weight:500;
+   margin-top: -10px;
+}
+.index .service .title .yw{
+  color:#5d5d5c;
+  font-family:"微软雅黑";
+  font-size:20px;
+  font-weight:100;
+  margin-top: -15rpx;
+  
+
+ overflow:hidden;
+display:-webkit-box;
+word-break:break-all;
+text-overflow:ellipsis;
+-webkit-box-orient:vertical;
+
+  -webkit-line-clamp:1;
+  
+}
+.index .service .title .tp{
+   width:40rpx;
+   margin-top:-18rpx;
+ 
+}
+.index .service .pinpai{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  sjustify-content:space-between;
+}
+
+.index .service .pinpai navigator{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  sjustify-content:space-between;
+}
+
+.index .service .pinpai navigator .fenl{ 
+  width:300rpx;
+  height:235rpx;
+
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;  
+  justify-content:space-between;
+   
+}
+
+.index .service .pinpai navigator .fenl .zw{
+    width:100%;
+    color:#222222;
+   font-family:"微软雅黑";
+   font-size:0.9rem;
+  position:absolute;
+  text-align: center;
+   top:75rpx;
+}
+
+.index .service .pinpai navigator .fenl .yw{
+    width: 100%;
+    color:#222222;
+   font-family:"微软雅黑";
+   font-size:0.5rem;
+    position:absolute;
+   top:120rpx;
+   text-align: center;
+   
+}
+
+
+
+/*------------------------------关于我们 开始-----------------------------------*/
+.index .about{
+  width: 100%;
+
+}
+.index .about navigator .title{
+  width: 100%;
+  overflow: hidden;
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+.index .about navigator .title .zw{
+  font-family: '微软雅黑';
+  font-size:20px;
+  color: #818181;
+  
+}
+
+.index .about navigator .title .yw{
+  font-family: '微软雅黑';
+  font-size:10px;
+  color: #818181;
+  font-weight:100;
+  letter-spacing:10px;
+  
+}
+.index .about navigator .ypwz{
+  width:90%;
+  margin: auto;
+  text-indent:24px;
+  font-family:'微软雅黑';
+  font-size:14px;
+  color:#545353;
+  margin-bottom: 30px;
+
+  overflow: hidden; 
+  display: -webkit-box;  
+  word-break: break-all;  
+  text-overflow: ellipsis;  
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 3;
+}
+
+.buttom{
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+}
+.buttom .dg{
+  width: 25%;
+  text-align: center;
+
+}
+.buttom .dg image{
+  width:35%;
+}
+.buttom .dg text{
+  font-family: '微软雅黑';
+  color: red;
+  font-size:28rpx;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+<!--pages/Shopping Cart/Shopping Cart.wxml-->
+<view class='quanxuan'>
+          <view class='left'>
+                    <view class='xuankuang'>
+                    </view>
+                    <text>全选</text>
+           </view>         
+          <view class='tup'>
+                    <image src='../../images/shanchu.png' mode='widthFix'></image>
+          </view>
+</view>
+
+<view class='dingdan'>
+          <view class='xuanze'></view>
+          <view class='xiangqing'>
+                    <view class='tu'>
+                              <image src='../../images/chanpin.jpg' mode='widthFix'></image>
+                    </view>
+                    <view class='text'>
+                              <view class='text-one'>
+                                          <text>第一个产品</text>
+                                          <text class='jiaqian'>￥888</text>
+                              </view>
+                              <view class='text-two'>
+                                        <text>描述产品的功能特性用法好处</text>
+                              </view>
+                              <view class='text-three'>
+                                        <view class='jian'>
+                                                  <image src='../../images/jian.png' mode='widthFix'></image>
+                                        </view>
+                                                    <view class='input'>
+                                                              <input type='number' value='1'></input>
+                                                    </view>
+                                        <view class='jia'>
+                                                  <image src='../../images/jia.png' mode='widthFix'></image>
+                                        </view>
+                              </view>
+                    </view>
+          </view>
+</view>
+
+
+<view class='jiesuan'>
+          <view class='text'>
+                    <text>总计：</text>       
+                    <text class='qian'>￥999999</text>   
+          </view>
+
+          <navigator url=''>
+          <view class='button'>
+                    <button type='primary'>结算（99）</button>
+                    <text></text>
+          </view>
+          </navigator>
+
+          
+</view>

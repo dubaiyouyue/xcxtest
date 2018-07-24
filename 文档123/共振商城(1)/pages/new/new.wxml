@@ -1,0 +1,13 @@
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" class="aasss{{xz}}">
+    <checkbox value="{{item.name}}" style='display:none;' checked="{{item.checked}}"/>
+  </label>
+</checkbox-group>
+
+
+<view class='dahezi'>
+    <view class='dg'>
+      <image src='../../images/1_21.png' mode='widthFix'></image>
+      <text>JJJJJJ</text>
+    </view>
+</view>

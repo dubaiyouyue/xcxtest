@@ -1,0 +1,66 @@
+<!--pages/address/address.wxml-->
+
+<navigator url='/pages/xinzeng/xinzeng'  open-type='navigate'>
+<view class='xinzeng'>
+          <image src='../../images/shouhuo.png' mode='widthFix'></image>
+          <text>新增收货地址</text>
+          <image class='hei' src='../../images/heijiantou.png' mode='widthFix'></image>
+</view>
+</navigator>
+
+
+<view class='dizhi'>
+            <view class='neir'>
+                      <view class='left'>
+                                <view class='xuan'>
+                                          <checkbox-group bindchange="checkboxChange" >
+                                                    <label class="checkbox" class="danxuan{{xz}}">
+                                                              <checkbox name="xxxxxx" value="{{item.name}}" style='display:none;' checked="{{item.checked}}"/>
+                                                    </label>
+                                          </checkbox-group>
+                                </view>
+                      </view>
+                      <view class='right'>
+                                <view class='mingzi'>
+                                          <text>南宁共振</text>
+                                </view>
+                                <view class='dianhua'>
+                                          <text>0771-5508889</text>
+                                </view>
+                                <view class='xiangxi'>
+                                          <text>南宁市青秀区中山路66号金外滩商务大夏1301</text>
+                                </view>
+                      </view>
+            </view>     
+            <view class='bianji'>
+                                <view class='moren'>
+                                          <view class='tupian'>
+                                                             
+                                          </view>
+                                          <text>默认地址</text>
+                                </view>
+                                
+                                <view class='bianjishangchu'>
+                                          <view class='gai'>
+                                                  <text>编辑</text>
+                                                  <image src='../../images/bianji.png' mode='widthFix'></image>
+                                                    
+                                          </view>  
+                                          <view class='gai'>
+                                                  <text>删除</text>
+                                                  <image src='../../images/shanchu.png' mode='widthFix'></image>
+                                                    
+                                          </view> 
+                                </view>
+            </view>
+</view>
+
+
+<!--
+                                                      <checkbox-group bindchange="checkboxChange" >
+                                                              <label class="checkbox" class="moxuan{{xz}}">
+                                                                        <checkbox name="xxx" value="{{item.name}}" style='display:none;' checked="{{item.checked}}"/>   
+                                                      </label>
+                                                    </checkbox-group>     
+                                                    
+                                                    --> 

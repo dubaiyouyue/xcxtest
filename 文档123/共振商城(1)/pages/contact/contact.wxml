@@ -1,0 +1,96 @@
+<!--pages/contact/contact.wxml-->
+<!-------------banner 开始-------------->
+<image style='width:100%;' src='../../images/ab0.png' mode="widthFix" ></image>
+<!-------------banner 结束-------------->
+
+
+<view class="contact" style="background:url('https://hhh.liangtianmei.com/images/bjjj.png');">
+  <!-------------标题 开始-------------->
+  <view class='title'>
+    <view class='zuo'>
+      <view class='xian'></view>
+      <view class='yuan'>●</view>
+    </view>
+
+    <view class='wz'>
+      <text class='yw'>CONTACT US\n</text>
+      <text class='zw'>联系我们\n</text>
+    </view>
+
+    <view class='you'>
+      <view class='yuan'>●</view>
+      <view class='xian'></view>
+    </view>
+  </view>
+  <!-------------标题 结束-------------->
+
+  <!-------------联系方式 开始-------------->
+
+  <view  class='lxfs'>
+    <view class='biaot' style="background:url('https://ssl.resonance.net.cn/up/upload/82361514878995.png');background-repeat:no-repeat;background-size:100%;background-position:center center;">
+      <text>CONTACT INFORMATION</text>
+    </view>
+    <view class='nier'>
+      <text>电 话：0771-5508889\n</text>
+      <text>传 真：0771-5508889\n</text>
+      <text>邮 箱：lxycg@qq.com\n</text>
+      <text>邮 编：530001\n</text>
+      <text>Q Q:1738836876\n</text>
+      <text>地 址：南宁市青秀区中山路66号金外滩商务大厦13层1301室\n</text>
+    </view>
+  </view>
+  <!-------------联系方式 结束-------------->
+
+
+  <!-------------地图 开始-------------->
+  <view class='dt'>
+    <image src='../../images/map.png' mode="widthFix"></image>
+  </view>
+  <!-------------地图 开始-------------->
+
+
+
+  <!-------------留言 开始-------------->
+  <view class='message'>
+    <view class='biaot' style="background:url('https://ssl.resonance.net.cn/up/upload/82361514878995.png');background-repeat:no-repeat;background-size:100%;background-position:center center;">
+      <text>ONLINE MESSAGE</text>
+    </view>
+    <form>
+      <view class="kuang">
+        <text>姓名：</text>
+        <input class="input" placeholder-class="phcolor" placeholder="请输入用户名"/>
+      </view>
+
+      <view class="kuang">
+        <text>电话：</text>
+        <input class="input" placeholder-class="phcolor" placeholder="请输入电话号码"/>
+      </view>
+
+      <view class="kuang">
+        <text>邮箱：</text>
+        <input class="input" placeholder-class="phcolor" placeholder="请输入您的邮箱"/>
+      </view>
+
+      <view class="liuyan">
+        <text>邮箱：</text>
+        <textarea class='textares' maxlength="-1" placeholder-class="phcolor" placeholder="请输入您的邮箱"></textarea>
+        
+      </view>
+
+      <view class='anniu'>
+        <button class='cc'>清除</button>
+        <button class='tj'>提交</button>
+      </view>
+    
+    </form>
+  </view>
+    
+  <!-------------留言 结束-------------->
+
+</view>
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />

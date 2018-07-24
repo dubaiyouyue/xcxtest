@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/index/index",
+      "pages/about/about",
+    "pages/new/new",
+    "pages/case/case",
+    "pages/Service/Service",
+    
+  
+    
+    "pages/details/details",
+    "pages/contact/contact",
+    "pages/classification/classification",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "共振商城",
+    "navigationBarTextStyle":"black"
+  }
+
+}

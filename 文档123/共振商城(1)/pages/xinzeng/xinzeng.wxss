@@ -1,0 +1,65 @@
+/* pages/xinzeng/xinzeng.wxss */
+.new{
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  overflow:hidden;
+}
+
+.new text{
+  font-family: '微软雅黑';
+  font-size:32rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  line-height: 100rpx;
+  color: #333030;
+  width: 160rpx;
+  text-align: right;
+}
+
+.new input{
+  width: 400rpx;
+  font-size:36rpx;
+  color:#333030;
+}
+
+.new input .hover{
+  color: #e5e5e5;
+}
+
+.xiangxi{
+  width: 100%;
+  height: 200rpx;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+}
+
+.xiangxi text{
+font-family: '微软雅黑';
+  font-size:32rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  line-height: 100rpx;
+  color: #333030;
+  width: 160rpx;
+  text-align: right;
+}
+
+.xiangxi textarea{
+  width: 400rpx;
+  margin-top: 32rpx;
+  font-size:36rpx;
+  color: #333030;
+}
+
+button{
+  margin-top: 100rpx;
+  form
+}
+
+
+
+
+

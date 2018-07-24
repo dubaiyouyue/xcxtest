@@ -1,0 +1,14 @@
+ftp
+211.149.224.121
+ssltest
+u3W8h2U5
+
+后台
+http://ssl.resonance.net.cn/test/admin/
+
+
+数据库
+http://ssl.resonance.net.cn/phpMyAdmin/
+211.149.224.121
+ssltest
+u3W8h2U5

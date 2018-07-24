@@ -1,0 +1,77 @@
+<!-------------banner 开始-------------->
+<image style='width:100%;' src='../../images/ab0.png' mode="widthFix" ></image>
+<!-------------banner 结束-------------->
+
+
+<view class="service" style="background:url('https://hhh.liangtianmei.com/images/bjjj.png');">
+  <!-------------标题 开始-------------->
+  <view class='title'>
+    <view class='zuo'>
+      <view class='xian'></view>
+      <view class='yuan'>●</view>
+    </view>
+
+    <view class='wz'>
+      <text class='yw'>SERVICE SCOPE\n</text>
+      <text class='zw'>服务范围\n</text>
+    </view>
+
+    <view class='you'>
+      <view class='yuan'>●</view>
+      <view class='xian'></view>
+    </view>
+  </view>
+  <!-------------标题 结束-------------->
+
+  <!-------------服务内容 开始-------------->
+    <view class='se'>
+      <view class='meige'>
+        <navigator url='/pages/details/details'  open-type="navigate">
+          <view class='title'>
+            <text class='zw'>NO.01品牌策划</text>
+            <text class='yw'>BRAND PLANNING</text>
+          </view>
+          <view class='tw'>
+            <image src='../../images/se1.png' mode="widthFix"></image>
+            <text>一个网站的内容固然重要，但是如果没有一个好看而吸引的外表，哪怕有着再好的内容，有着再好的结构，相信整个网站的浏览效果也会大打折扣，浏览者的阅读兴致也会大减。就等于一个内</text>
+          </view>
+        </navigator>
+      </view>
+
+      <view class='meige'>
+        <navigator url='/pages/details/details'  open-type="navigate">
+          <view class='title'>
+            <text class='zw'>NO.02品牌设计</text>
+            <text class='yw'>BRSND DESIGN</text>
+          </view>
+          <view class='tw'>
+            <image src='../../images/se1.png' mode="widthFix"></image>
+            <text>一个网站的内容固然重要，但是如果没有一个好看而吸引的外表，哪怕有着再好的内容，有着再好的结构，相信整个网站的浏览效果也会大打折扣，浏览者的阅读兴致也会大减。就等于一个内</text>
+          </view>
+        </navigator>
+      </view>
+      
+
+      <view class='meige'>
+        <navigator url='/pages/details/details'  open-type="navigate">
+          <view class='title'>
+            <text class='zw'>NO.03品牌推广</text>
+            <text class='yw'>BRSND PROMOTION</text>
+          </view>
+          <view class='tw'>
+            <image src='../../images/se1.png' mode="widthFix"></image>
+            <text>一个网站的内容固然重要，但是如果没有一个好看而吸引的外表，哪怕有着再好的内容，有着再好的结构，相信整个网站的浏览效果也会大打折扣，浏览者的阅读兴致也会大减。就等于一个内</text>
+          </view>
+        </navigator>
+      </view>
+
+      
+    </view>
+  <!-------------服务内容 结束-------------->
+</view>
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />
