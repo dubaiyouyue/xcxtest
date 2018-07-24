@@ -1,0 +1,64 @@
+/* pages/Shopping_details/Shopping_details.wxss */
+
+.det{
+  width: 90%;
+  margin: auto;
+   padding-bottom: 60px;
+}
+
+.det image{
+  width: 100%;
+  margin-top:40rpx;
+  margin-bottom: 40rpx;
+}
+
+
+.biaot{
+  font-family: "微软雅黑";
+  color: #333333;
+  font-size:40rpx;
+  font-weight:500;
+}
+
+.rq{
+  font-family: "微软雅黑";
+  color:red;
+  font-size:35rpx;
+  display: block;
+  margin-bottom: 40rpx;
+  margin-top: 20rpx;
+  font-weight: bold;
+}
+
+
+.dibu{
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+
+}
+.dibu .jr{
+  width: 50%;
+  background: #FF5C26;
+  color: #fff;
+  float:left;
+
+}
+
+.dibu .gm{
+   width: 50%;
+  background:red;
+  color: #fff;
+  float:left;
+
+}
+
+
+
+
+
+
+
+
+
+

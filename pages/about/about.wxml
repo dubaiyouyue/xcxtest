@@ -1,0 +1,132 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<!-------------banner 开始-------------->
+<image style='width:100%;' src='https://ssl.resonance.net.cn/test/{{banner.img_path}}' mode="widthFix" ></image>
+<!-------------banner 结束-------------->
+
+
+<view class="about" style="background:url('https://ssl.resonance.net.cn/test/images/bjjj.png');">
+  <!-------------标题 开始-------------->
+  <view class='title'>
+    <view class='zuo'>
+      <view class='xian'></view>
+      <view class='yuan'>●</view>
+    </view>
+
+    <view class='wz'>
+      <text class='yw'>ABOUT SU\n</text>
+      <text class='zw'>关于我们\n</text>
+    </view>
+
+    <view class='you'>
+      <view class='yuan'>●</view>
+      <view class='xian'></view>
+    </view>
+  </view>
+  <!-------------标题 结束-------------->
+
+  <!-------------导航 开始-------------->
+    <view class='nav'>
+
+
+      <view class='meiyi'>
+
+<block wx:for="{{all}}">
+      <view class="dg"  bindtap="getnewcontent" data-id="{{index}}" data-c='{{index+1}}'>
+
+      <block wx:if="{{index==id}}">
+         <image src="https://ssl.resonance.net.cn/test/{{item.indeximg}}" mode="widthFix" data-index="{{index}}"></image>
+          </block>
+
+     
+         
+
+          <block wx:else>
+            <image src="https://ssl.resonance.net.cn/test/{{item.columnimg}}" mode="widthFix" data-index="{{index}}"></image>
+          </block>
+
+      
+
+          
+          
+          <text>{{item.name}}</text>
+        </view>
+</block>
+
+<!-- 或者这样写
+<block wx:for="{{all}}">
+      <view class="dg"  bindtap="getnewcontent" data-id="{{index}}" data-c='{{index+1}}'>
+
+      
+          <block wx:if="{{index==clickId}}"> 
+          <image src="{{item.two}}" mode="widthFix" data-index="{{index}}"></image>
+           </block> 
+
+          <block wx:else>
+          <image src="{{item.two1}}" mode="widthFix" data-index="{{index}}"></image>
+           </block> 
+
+
+           
+          <text>{{item.one}}</text>
+        </view>
+</block>
+
+-->
+
+
+      <!--
+        <view class='dg' bindtap="getnewcontent" data-c='2'>
+          <image src='../../images/ab2.gif' mode="widthFix"></image>\r\n
+          <text>公司介绍</text>
+        </view>
+
+        <view class='dg' bindtap="getnewcontent" data-c='3'>
+          <image src='../../images/ab3.gif' mode="widthFix"></image>\r\n
+          <text>公司理念</text>
+        </view>
+
+        <view class='dg'>
+          <image src='../../images/ab4.gif' mode="widthFix"></image>\r\n
+          <text>核心优势</text>
+        </view>
+
+        <view class='dg'>
+          <image src='../../images/ab5.gif' mode="widthFix"></image>\r\n
+          <text>公司使命</text>
+        </view>-->
+      </view>
+    </view>
+  <!-------------导航 结束-------------->
+<!-------------新图文 开始-------------->
+<view class='nr'>
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+</view>
+ <!-------------新图文 结束-------------->
+
+  <!-------------图文 开始-------------->
+  <!--
+    <view class='nr'>
+      <image src='../../images/ab1.png' mode="widthFix"></image>
+      <text>{{content}}</text>
+
+         
+        <view class="wxParse">
+            <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+        </view>
+
+    </view>
+    -->
+  <!-------------图文 结束-------------->
+
+</view>
+
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />

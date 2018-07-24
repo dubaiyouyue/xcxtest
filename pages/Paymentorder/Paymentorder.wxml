@@ -1,0 +1,75 @@
+<!--pages/Payment order/Payment order.wxml-->
+<view class='zhifudingdan'>
+
+
+<block wx:for="{{alll}}">
+
+  <view class='top'>
+    <view class='bianhao'>
+      <text>订单编号：{{item.order}}</text>
+    </view>
+   
+  </view>
+  <view class='dingdan'>
+    <view class='tu'>
+      <image src='https://ssl.resonance.net.cn/test/{{item.imgurl}}' style="width:260rpx;height:180rpx;"></image>
+    </view>
+    <view class='text'>
+      <view class='text-one'>
+        <text>{{item.title}}</text>
+        
+      </view>
+      <view class='text-two'>
+        <text class="description">{{item.description}}</text>
+      </view>
+      <view class='text-three'>
+        <text class='jiaqian'>￥{{item.price}}  x </text><view wx:if="{{item.num}}" class='jiaqian'> {{item.num}}</view><view wx:else class='jiaqian'>{{num}}</view>
+
+
+<!-- 如果是在购物车提交到结算页面的，数量为{{item.num}}，如果是立即购买提交过来的，那么数量为{{num}}-->
+
+      </view>
+    </view>
+  </view>
+</block>
+
+  
+ <navigator url="/pages/address/address?id={{id}}&ljgmmm={{ljgmmm}}" open-type="navigate">
+  <view class='xinzeng'>
+          <text>收货地址</text>
+          <image class='hei' src='https://ssl.resonance.net.cn/test/images/heijiantou.png' mode='widthFix'></image>
+</view>
+
+ </navigator>
+
+<view class='dizhi'>
+            <view class='neir'>
+    
+                      <view class='right'>
+                                <view class='mingzi'>
+                                          <text>{{addresss.user}}</text>
+                                </view>
+                                <view class='dianhua'>
+                                          <text>{{addresss.phone}}</text>
+                                </view>
+                                <view class='xiangxi'>
+                                          <text>{{addresss.province}}{{addresss.address}}</text>
+                                </view>
+                      </view>
+            </view>     
+           
+</view>
+
+<view class='jiesuan'>
+          <view class='text'>
+                    <text>总计：</text>       
+                    <text class='qian'>￥{{totalP}}</text>   
+          </view>
+          <view class='button'>
+                    <button type='primary' bindtap='paynow' data-id="{{id}}">结算</button>
+                    <text></text>
+          </view>
+</view>
+
+
+</view>

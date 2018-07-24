@@ -1,0 +1,101 @@
+<!--pages/address/address.wxml-->
+
+<navigator url='/pages/xinzeng/xinzeng'  open-type='navigate'>
+<view class='xinzeng'>
+          <image src='https://ssl.resonance.net.cn/test/images/shouhuo.png' mode='widthFix'></image>
+          <text>新增收货地址</text>
+          <image class='hei' src='https://ssl.resonance.net.cn/test/images/heijiantou.png' mode='widthFix'></image>
+</view>
+</navigator>
+
+
+<view  style='padding-bottom:50rpx'>
+<block wx:for="{{all}}">
+
+<view class='dizhi'>
+            <view class='neir'>
+                      <view class='left'>
+                                <view class='xuan'>
+                                          <checkbox-group bindchange="checkboxChange" >
+                                                    <label wx:if="{{item.id==id}}" data-aid="{{item.id}}" class="checkbox" data-index="{{index}}" bindtap='gouxuan' class="danxuan{{xz}}">
+                                                    <image src='https://ssl.resonance.net.cn/test/images/redyes.jpg' mode='widthFix' style='width:48rpx;height:48rpx;'></image>
+                                                             
+                                                    </label>
+
+
+                                                     <label  wx:else class="checkbox" data-aid="{{item.id}}"  data-index="{{index}}" bindtap='gouxuan' class="danxuan{{xz}}">
+                                                    <image src='https://ssl.resonance.net.cn/test/images/redno.jpg' mode='widthFix' style='width:48rpx;height:48rpx;'></image>
+                                                             
+                                                    </label>
+
+
+
+
+
+                                          </checkbox-group>
+                                </view>
+                      </view>
+                      <view class='right'>
+                                <view class='mingzi'>
+                                          <text>{{item.user}}</text>
+                                </view>
+                                <view class='dianhua'>
+                                          <text>{{item.phone}}</text>
+                                </view>
+                                <view class='xiangxi'>
+                                          <text>{{item.province}}{{item.address}}</text>
+                                </view>
+                      </view>
+            </view>     
+            <view class='bianji'>
+
+
+
+                                <view class='moren' wx:if="{{item.id==aid}}"   data-check='{{item.check}}' data-index='{{index}}' data-id="{{item.id}}" bindtap='check'>
+                                          <view class='tupian'>
+                                                  <image src='https://ssl.resonance.net.cn/test/images/xuanzhongmuren.png' style='width:48rpx;height:48rpx;' mode='widthFix'></image>             
+                                          </view>
+                                          <text>默认地址</text>
+                                </view>
+                                
+
+                                 <view class='moren' wx:else data-id="{{item.id}}" data-check='{{item.check}}'  data-index='{{index}}'  bindtap='check'>
+                                          <view class='tupian'>
+                                                  <image src='https://ssl.resonance.net.cn/test/images/xuanno.png' style='width:48rpx;height:48rpx;' mode='widthFix'></image>             
+                                          </view>
+                                          <text>默认地址</text>
+                                </view>
+                                
+
+
+
+
+
+                                <view class='bianjishangchu'>
+                                <navigator url='/pages/edit/edit?id={{item.id}}&diqu={{item.province}}'  open-type='navigate'>
+                                          <view class='gai' data-id="{{item.id}}">
+                                                  <text>编辑</text>
+                                                  <image src='https://ssl.resonance.net.cn/test/images/bianji.png' mode='widthFix'></image>
+                                                    
+                                          </view>  
+                                </navigator>
+
+                                          <view class='gai' data-id="{{item.id}}" bindtap="deleteaddress">
+                                                  <text>删除</text>
+                                                  <image src='https://ssl.resonance.net.cn/test/images/shanchu.png' mode='widthFix'></image>
+                                                    
+                                          </view> 
+                                </view>
+            </view>
+</view>
+</block>
+</view>
+
+<!--
+                                                      <checkbox-group bindchange="checkboxChange" >
+                                                              <label class="checkbox" class="moxuan{{xz}}">
+                                                                        <checkbox name="xxx" value="{{item.name}}" style='display:none;' checked="{{item.checked}}"/>   
+                                                      </label>
+                                                    </checkbox-group>     
+                                                    
+                                                    --> 

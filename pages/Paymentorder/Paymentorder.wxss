@@ -1,0 +1,214 @@
+/* pages/Payment order/Payment order.wxss */
+
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #efeff4;  
+}  
+
+
+/*订单编号和 状态*/
+
+.top{
+  width: 100%;
+  height: 70rpx;
+  background-color:#fff;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-end;
+  font-family: '微软雅黑';
+  font-size: 20rpx;
+}
+
+.top .bianhao{
+  padding-left: 40rpx;
+  color: #666666;
+}
+
+
+
+/**订单详情*/
+
+
+.dingdan{
+  width: 100%;
+  height: 260rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+}
+
+.dingdan .tu{
+  margin-left: 40rpx;
+}
+
+.dingdan .tu image{
+  width: 260rpx;
+  margin-right: 40rpx;
+}
+
+.dingdan .text{
+  width: 370rpx;
+  height: 170rpx;
+}
+
+.dingdan .text .text-one{
+  line-height: 20rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content:space-between;
+  font-size: 32rpx;
+}
+
+
+
+.dingdan .text .text-two{
+  height: 90rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.dingdan .text .text-three{
+  height:54rpx;
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-start;  /*水平方向的右边*/
+}
+
+.dingdan .text .text-three .jiaqian{
+  color: #e40000;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.dingdan .text .text-three .zhifu{
+  width: 140rpx;
+  height: 40rpx;
+  background-color: #e40000;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+.xinzeng{
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
+.xinzeng text{
+  font-size: 30rpx;
+  margin-left: 50rpx;
+}
+
+.xinzeng .hei{
+  width: 20rpx;
+  position: absolute;
+  right: 40rpx;
+}
+
+
+
+/*地址*/
+.dizhi{
+  width: 100%;
+  height: 200rpx;
+  background-color: #fff;
+  margin-bottom: 140rpx;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*内容区*/
+
+.dizhi .neir{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
+/*右边内容*/
+
+.dizhi .neir .right{
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 40rpx;
+}
+
+.dizhi .neir .right .mingzi{
+font-size: 34rpx;
+float: left;
+margin-top: 10rpx;
+}
+
+.dizhi .neir .right .dianhua{
+font-size: 34rpx;
+float: right;
+margin-right: 40rpx;
+margin-top: 10rpx;
+}
+
+.dizhi .neir .right .xiangxi{
+font-size: 30rpx;
+float: left;
+padding-right: 40rpx;
+margin-top: 20rpx;
+}
+
+
+/*结算*/
+.jiesuan{
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom:0rpx;
+}
+
+.jiasuan .text{
+width: 200rpx;
+background-color: yellow;
+}
+ 
+.jiesuan .text text{
+  font-family: '微软雅黑';
+  font-size: 40rpx;
+  padding-left: 40rpx;
+}
+
+.jiesuan .text .qian{
+  color: #e40000;
+}
+
+.button button{
+font-size: 40rpx;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #e40000;
+border-radius: 0px;
+}
+
+
+.description{
+  overflow:hidden;
+display:-webkit-box;
+word-break:break-all;
+text-overflow:ellipsis;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+
+}

@@ -1,0 +1,71 @@
+<!--pages/project/project.wxml-->
+<view class='bt'>
+  <text>UI设计</text>
+</view>
+
+<view class='ner'>
+<block wx:for="{{all}}">
+ <view class='fenkai'>
+      <navigator url="/pages/Shopping_details/Shopping_details?id={{item.id}}&class1={{item.class1}}" open-type="navigate">
+        <image src='https://ssl.resonance.net.cn/test/{{item.imgurl}}' mode='widthFix'></image>
+        <view class='tittle'>
+          <text class='biaoti'>{{item.title}}</text>
+          <text class='rq'>￥{{item.price}}</text>
+         
+        </view>
+      </navigator>
+
+      <block wx:if="{{item.id==id}}">
+         <image src='https://ssl.resonance.net.cn/test/images/3.3.png' mode='widthFix' style='width:9%;margin:-60rpx 20rpx 0 0;float:right;' bindtap='addcart' id="{{item.id}}"></image>
+        </block>
+
+          <block wx:else>
+                    <image src='https://ssl.resonance.net.cn/test/images/3.png' mode='widthFix' style='width:9%;margin:-60rpx 20rpx 0 0;float:right;' bindtap='addcart' id="{{item.id}}"></image>
+          </block>
+
+
+     
+    </view>
+</block>
+<!--
+  <view class='fenkai'>
+      <navigator url="/pages/details/details" open-type="navigate">
+        <image src='../../images/fenlei0101.jpg' mode='widthFix'></image>
+        <view class='tittle'>
+          <text class='biaoti'>文化推广UI设计</text>
+          <text class='rq'>￥880</text>
+          <image src='../../images/3.3.png' mode='widthFix'></image>
+        </view>
+      </navigator>
+    </view>
+
+    <view class='fenkai'>
+      <navigator url="/pages/details/details" open-type="navigate">
+        <image src='../../images/fenlei0102.jpg' mode='widthFix'></image>
+        <view class='tittle'>
+          <text class='biaoti'>品牌推广UI设计</text>
+          <text class='rq'>￥880</text>
+          <image src='../../images/3.3.png' mode='widthFix'></image>
+        </view>
+      </navigator>
+    </view>
+
+    <view class='fenkai'>
+      <navigator url="/pages/details/details" open-type="navigate">
+        <image src='../../images/fenlei0101.jpg' mode='widthFix'></image>
+        <view class='tittle'>
+          <text class='biaoti'>企业推广UI设计</text>
+          <text class='rq'>￥880</text>
+          <image src='../../images/3.3.png' mode='widthFix'></image>
+        </view>
+      </navigator>
+    </view>
+    -->
+
+</view>
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />

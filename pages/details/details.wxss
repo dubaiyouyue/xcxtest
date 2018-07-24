@@ -1,0 +1,35 @@
+/* pages/details/details.wxss */
+
+.det{
+  width: 90%;
+  margin: auto;
+   padding-bottom: 60px;
+}
+
+.det image{
+  width: 100%;
+  margin-top:40rpx;
+  margin-bottom: 40rpx;
+}
+
+
+.biaot{
+  font-family: "微软雅黑";
+  color: #333333;
+  font-size:40rpx;
+  font-weight:500;
+}
+
+.rq{
+  font-family: "微软雅黑";
+  color: #828282;
+  font-size:30rpx;
+  display: block;
+  margin-bottom: 40rpx;
+}
+
+
+
+
+
+

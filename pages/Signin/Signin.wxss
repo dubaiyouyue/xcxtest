@@ -1,0 +1,49 @@
+/* pages/Sign in/Sign in.wxss */
+.kuang{
+  width: 85%;
+  margin: auto;
+  margin-top: 80rpx;
+}
+
+.kuang .dg{
+ display: flex;
+ align-items: center;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 40rpx;
+
+}
+.kuang .dg .tp{
+  width: 100rpx;
+  height: 100rpx;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;/*垂直上下居中*/
+  justify-content: space-around;/*水平左右居中*/
+}
+
+.kuang .dg .tp image{
+  width:50%;
+  
+}
+.kuang .dg input{
+  width:200rpx;
+  color: #777777;
+  padding:0 40rpx;
+  font-family: '微软雅黑';
+  font-size: 30rpx;
+  margin-right: 0px;
+}
+
+.kuang .dg .hover{
+  color: #e7e7e7;
+}
+
+.kuang .dg button{
+  font-size: 30rpx;
+  font-family: '微软雅黑';
+  color: #f0f0f0;
+  background-color: red;
+  border-radius: 0rpx;
+  padding: 0rpx 20rpx;
+  margin-right: 20rpx; 
+}

@@ -1,0 +1,209 @@
+/* pages/address/address.wxss */
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #efeff4;  
+}  
+
+text{
+  font-family: '微软雅黑';
+  color: #333030;
+}
+
+/*新增*/
+
+.xinzeng{
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.xinzeng image{
+width:40rpx;
+height: 60rpx;
+display: block;
+margin-left: 60rpx;
+}
+
+.xinzeng text{
+  font-size: 32rpx;
+  margin-left: 50rpx;
+}
+
+.xinzeng .hei{
+  width: 20rpx;
+  position: absolute;
+  right: 40rpx;
+}
+
+
+
+/*地址*/
+.dizhi{
+  width: 100%;
+  height: 300rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+/*内容区*/
+
+.dizhi .neir{
+  width: 100%;
+  height: 70%;
+  border-bottom: 2px solid #e5e5e5;
+  display: flex;
+}
+
+/*内容左边*/
+
+.dizhi .neir .left{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*默认*/
+.dizhi .neir .left .xuan .danxuan{
+  width: 48rpx;
+  height: 48rpx;
+  display: block;
+ 
+  }
+
+/*选中的时候*/
+.dizhi .neir .left .xuan .danxuanxz{
+  width: 48rpx;
+  height: 48rpx;
+  display: block;
+  background: url(https://ssl.resonance.net.cn/up/upload/54201515115109.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+}
+
+.dizhi .neir .left .xuan{
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+ 
+  justify-content: center;
+  margin-top:-40px;
+
+}
+
+
+/*右边内容*/
+
+.dizhi .neir .right{
+  width: 80%;
+  height: 100%;
+}
+
+.dizhi .neir .right .mingzi{
+font-size: 36rpx;
+float: left;
+margin-top: 20rpx;
+}
+
+.dizhi .neir .right .dianhua{
+font-size: 36rpx;
+float: right;
+margin-right: 40rpx;
+margin-top: 20rpx;
+}
+
+.dizhi .neir .right .xiangxi{
+font-size: 30rpx;
+float: left;
+padding-right: 40rpx;
+margin-top: 40rpx;
+color: #999999;
+}
+
+/*编辑区*/
+
+.dizhi .bianji{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dizhi .bianji text{
+ font-size: 26rpx;
+ color: #999999;
+}
+
+.dizhi .bianji .moren{
+  width: 300rpx;
+  display: flex;
+}
+
+.dizhi .bianji .moren text{
+  margin-left: 52rpx;
+  line-height: 52rpx;
+}
+
+.dizhi .bianji .moren .tupian{
+  width: 48rpx;
+  height: 48rpx;
+  
+  margin-left: 54rpx;
+  
+}
+
+
+/*  默认与选中
+
+
+.dizhi .bianji .moren .tupian .moxuan{
+  width: 48rpx;
+  height: 48rpx;
+  display: block;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  }
+
+
+.dizhi .bianji .moren .tupian .moxuanxz{
+  width: 48rpx;
+  height: 48rpx;
+  display: block;
+  background: url(https://ssl.resonance.net.cn/up/upload/11421515117195.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+}
+
+*/
+
+.dizhi .bianji .bianjishangchu{
+  display: flex;
+  position: absolute;
+  right: 40rpx;
+}
+
+.dizhi .bianji .gai{
+  display: flex;
+  margin-left: 60rpx;
+  align-items: center;
+}
+
+.dizhi .bianji .gai text{
+  margin-right: 20rpx;
+}
+
+.dizhi .bianji .gai image{
+  width:48rpx; 
+  height:48rpx;
+}
+

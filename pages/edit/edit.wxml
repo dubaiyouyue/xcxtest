@@ -1,0 +1,60 @@
+<!--pages/xinzeng/xinzeng.wxml-->
+ <form bindsubmit="formSubmit">
+<view class='new'>
+            <text>收货人</text>
+            <input placeholder-class='hover' name="user" placeholder="{{reuser}}"  value="{{find.user}}" ></input>
+</view>
+
+<view class='new'>
+            <text>手机号码</text>
+            <input placeholder-class='hover' name="phone" placeholder="{{rephone}}" value="{{find.phone}}"></input>
+</view>
+
+<view class='new' bindtap="selectDistrict">
+            <text>所在地区</text>
+            <input placeholder-class='hover' disabled='false' name="province" placeholder="{{reprovince}}" value='{{areaInfo}}'></input>
+</view>
+
+<view class='xiangxi'>
+  <text>详细地址</text>
+  <textarea placeholder-style='color:#e5e5e5' name="address" placeholder="{{readdress}}" value="{{find.address}}"></textarea>
+</view>
+
+
+<input name="id" style='display:none;' value="{{find.id}}"></input>
+
+<input name="pppp" style='display:none;' value="{{find.province}}"></input>
+
+
+<button type='primary' formType="submit">保存</button>
+<!--<navigator url='/pages/address/address'  open-type='navigate'>
+
+</navigator>-->
+
+</form>
+
+
+<view class="dialog-mask " style="z-index:11;visibility:{{addressMenuIsShow ? 'visible': 'hidden'}}" bindtap="hideCitySelected" />
+<!--城市三级联动-->
+<!--使用动画时不能wx:if="{{city.length>0&&isVisible}}" ，不能hidden=''属性否则无动画效果-->
+<view class="picker-view" animation="{{animationAddressMenu}}" style="visibility:{{addressMenuIsShow ? 'visible':'hidden'}}">
+  <view style="height:10% ;width:80%;margin-top:10rpx">
+    <text catchtap="cityCancel">取消</text>
+    <text style="float: right" catchtap="citySure">确定</text>
+  </view>
+  <!--"可以显示默认的城市，使用后级联选择城市反应很慢就不使用了-->
+  <picker-view style="width: 100%; height: 300px;" bindchange="cityChange" value="{{value}}" wx:key="">
+    <picker-view-column>
+      <view wx:for="{{provinces}}" class="picker-item">
+        {{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" class="picker-item" wx:key="">
+        {{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{areas}}" class="picker-item" wx:key="">
+        {{item.name}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

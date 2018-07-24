@@ -1,0 +1,105 @@
+<!--pages/classification/classification.wxml-->
+<view class='classification'>
+
+
+  <!-----------------搜索框 开始----------------------->
+    <form bindsubmit="formSubmit">
+   <view class='ssk'>
+    <view class='kuang'>
+      <input class='input' placeholder-class="jj" placeholder="请输入您想搜索的" name="keyword"/>
+      <button class='aniu' style='background: url(https://ssl.resonance.net.cn/up/upload/52621515137739.png);background-repeat:no-repeat;background-size:contain;background-position:center center;' formType="submit"></button>
+    </view>
+  </view>
+   </form>
+  <!-----------------搜索框 结束----------------------->
+  
+  <!-----------------二级导航 开始----------------------->
+  <view class='nav'>
+    <navigator url="/pages/classification/classification"  open-type="redirect">
+      <view class='dg dq'>
+        <text>推荐</text>
+      </view>
+    </navigator>
+
+    <navigator url="/pages/classification_all/classification_all"  open-type="redirect">
+      <view class='dg'>
+        <text>全部</text>
+      </view>
+    </navigator>
+
+  </view>
+  <!-----------------二级导航 结束----------------------->
+
+  <!-----------------内容 开始----------------------->
+  <view class='ner{{vv}}'>
+
+<block wx:for="{{news}}">
+
+
+
+    <view class='fenkai'>
+      <navigator url="/pages/Shopping_details/Shopping_details?id={{item.id}}&class1={{item.class1}}" open-type="navigate">
+        <image src='https://ssl.resonance.net.cn/test/{{item.imgurl}}' mode='widthFix'></image>
+        <view class='tittle'>
+          <text class='biaoti'>{{item.title}}</text>
+          <text class='rq'>￥{{item.price}}</text>
+          
+        </view>
+      </navigator>
+
+      <block wx:if="{{item.id==id}}">
+         <image src='https://ssl.resonance.net.cn/test/images/3.3.png' mode='widthFix' style='width:9%;margin:-60rpx 20rpx 0 0;float:right;' bindtap='addcart' data-id="{{item.id}}"></image>
+        </block>
+
+          <block wx:else>
+                    <image src='https://ssl.resonance.net.cn/test/images/3.png' mode='widthFix' style='width:9%;margin:-60rpx 20rpx 0 0;float:right;' bindtap='addcart' data-id="{{item.id}}"></image>
+          </block>
+          
+    </view>
+</block>
+  </view>
+
+  <view class='ner{{zz}}'>
+<block wx:for="{{keyword}}">
+
+
+
+    <view class='fenkai'>
+      <navigator url="/pages/Shopping_details/Shopping_details?id={{item.id}}&class1={{item.class1}}" open-type="navigate">
+        <image src='https://ssl.resonance.net.cn/test/{{item.imgurl}}' mode='widthFix'></image>
+        <view class='tittle'>
+          <text class='biaoti'>{{item.title}}</text>
+          <text class='rq'>￥{{item.price}}</text>
+          
+        </view>
+      </navigator>
+
+      <block wx:if="{{item.id==id}}">
+         <image src='https://ssl.resonance.net.cn/test/images/3.3.png' mode='widthFix' style='width:9%;margin:-60rpx 20rpx 0 0;float:right;' bindtap='addcart' data-id="{{item.id}}"></image>
+        </block>
+
+          <block wx:else>
+                    <image src='https://ssl.resonance.net.cn/test/images/3.png' mode='widthFix' style='width:9%;margin:-60rpx 20rpx 0 0;float:right;' bindtap='addcart' data-id="{{item.id}}"></image>
+          </block>
+          
+    </view>
+</block>
+  </view>
+
+
+
+
+  <!-----------------内容 结束----------------------->
+
+  
+
+</view>
+
+
+
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />

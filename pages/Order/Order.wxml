@@ -1,0 +1,193 @@
+<!--pages/Order/Order.wxml-->
+<view class='daohang'>
+
+            
+            <view class="daohangone hover{{ll}}"  bindtap='onLoad'>
+           
+                      <text>全部</text>
+            
+            </view>
+           
+          
+            <view class="daohangone hover{{ss}}"  bindtap='nopay' >
+         
+                      <text>未支付</text>
+            
+          </view>
+            
+
+            <view class="daohangone hover{{hh}}"  bindtap='yespay'>
+      
+                      <text>已完成</text>
+        
+            </view>
+
+          
+</view>
+
+
+
+<block wx:for="{{all}}">
+
+<view class='top'>
+          <view class='bianhao'>
+                    <text>订单编号：123456789000</text> 
+          </view> 
+          <view class='weizhifu'>
+
+                 
+<block wx:if="{{item.pay==1}}">
+                    <text>未支付</text>
+</block>
+
+<block wx:else>
+                    <text>已支付</text>
+</block>
+
+
+
+
+          </view>
+</view>
+<view class='dingdan'>
+          <view class='xuanze'></view>
+
+             <navigator url='/pages/Shopping_details/Shopping_details?id={{item.id}}&class1={{item.class1}}'  open-type="navigate">
+          <view class='tu'>
+                    <image src='https://ssl.resonance.net.cn/test/{{item.imgurl}}' style='width:130px;height:87px;' ></image>
+          </view>
+           </navigator>
+
+          <view class='text'>
+                   <navigator url='/pages/Shopping_details/Shopping_details?id={{item.id}}&class1={{item.class1}}'  open-type="navigate">
+                    <view class='text-one'>
+                                <text class="titleww">{{item.title}}</text>
+                                 <text class='jiaqian'>￥{{item.price}}</text>
+                    </view>
+                    <view class='text-two'>
+                              <text class="description">{{item.description}}</text>
+                    </view>
+
+                   </navigator>
+
+                    <navigator url='/pages/Paymentorder/Paymentorder'  open-type="navigate">
+                    <view class='text-three'>
+                              <view class='zhifu'>
+                                      <text>去支付</text>
+                              </view>
+                             
+                    </view>
+                    </navigator>
+          </view>
+</view>
+
+
+</block>
+
+
+
+
+
+<!--未完成订单-->
+
+
+<!--
+<view class='top'>
+          <view class='bianhao'>
+                    <text>订单编号：123456789000</text> 
+          </view> 
+          <view class='weizhifu'>
+                    <text>未支付</text>
+          </view>
+</view>
+<view class='dingdan'>
+          <view class='xuanze'></view>
+          <view class='tu'>
+                    <image src='https://ssl.resonance.net.cn/test/images/chanpin.jpg' mode='widthFix'></image>
+          </view>
+          <view class='text'>
+                    <view class='text-one'>
+                                <text>精品案例套</text>
+                                 <text class='jiaqian'>￥888</text>
+                    </view>
+                    <view class='text-two'>
+                              <text>描述产品的功能特性用法好处</text>
+                    </view>
+
+                    <navigator url='/pages/Paymentorder/Paymentorder'  open-type="navigate">
+                    <view class='text-three'>
+                              <view class='zhifu'>
+                                      <text>去支付</text>
+                              </view>
+                             
+                    </view>
+                    </navigator>
+          </view>
+</view>
+-->
+<!--已经删订单-->
+<!--
+
+<view class='top'>
+          <view class='bianhao'>
+                    <text>订单编号：123456789000</text> 
+          </view> 
+          <view class='weizhifu'>
+                    <text>已删除</text>
+          </view>
+</view>
+<view class='dingdan'>
+          <view class='xuanze'></view>
+          <view class='tu'>
+                    <image src='https://ssl.resonance.net.cn/test/images/chanpin.jpg' mode='widthFix'></image>
+          </view>
+          <view class='text'>
+                    <view class='text-one'>
+                                <text>精品案例套</text>
+                                 <text class='jiaqian'>￥888</text>
+                    </view>
+                    <view class='text-two'>
+                              <text>描述产品的功能特性用法好处</text>
+                    </view>
+                    <view class='text-three'>
+                              <view class='zhifu'>
+                                      <text>重新购买</text>
+                              </view>
+                             
+                    </view>
+          </view>
+</view>
+-->
+
+<!--完成订单-->
+<!--
+<view class='top'>
+          <view class='bianhao'>
+                    <text>订单编号：123456789000</text> 
+          </view> 
+          <view class='weizhifu'>
+                    <text>已完成</text>
+          </view>
+</view>
+<view class='dingdan'>
+          <view class='xuanze'></view>
+          <view class='tu'>
+                    <image src='https://ssl.resonance.net.cn/test/images/chanpin.jpg' mode='widthFix'></image>
+          </view>
+          <view class='text'>
+                    <view class='text-one'>
+                                <text>精品案例套</text>
+                                 <text class='jiaqian'>￥888</text>
+                    </view>
+                    <view class='text-two'>
+                              <text>描述产品的功能特性用法好处</text>
+                    </view>
+                    <view class='text-three'>
+                              <view class='zhifu'>
+                                      <text>再来一单</text>
+                              </view>
+                             
+                    </view>
+          </view>
+</view>
+-->

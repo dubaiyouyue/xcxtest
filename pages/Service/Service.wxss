@@ -1,0 +1,164 @@
+/* pages/Service/Service.wxss */
+
+.service{
+  width: 100%;
+  overflow: hidden;
+   padding-bottom: 60px;
+}
+/*-------------------标题 开始---------------------*/
+.service>.title{
+  width: 90%;
+  margin: auto;
+  height:136.8rpx;
+
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+.service .title .wz{
+  text-align: center;
+  margin: 0 5px;
+}
+.service .title .wz .yw{
+color: #545353;
+font-family: '微软雅黑';
+font-size:40rpx;
+font-weight: 100;
+padding: 0 5px;
+display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+ -webkit-line-clamp:1;
+}
+.service .title .wz .zw{
+color: #545353;
+font-family: '微软雅黑';
+font-size:45rpx;
+}
+.service .title .zuo{
+  overflow: hidden;
+  width:60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service .title .zuo .xian{
+  width:80%;
+  height: 1px;
+  background: #d0d0d0;
+  margin-top: -63rpx; 
+  margin-left: -5rpx;
+}
+.service .title .zuo .yuan{
+  font-family: '微软雅黑';
+  font-size: 15rpx;
+  color: #d0d0d0;
+  margin-top: -65rpx;
+  margin-left: 5rpx;
+}
+
+.service .title .you{
+  overflow: hidden;
+  width:60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service .title .you .xian{
+  width:80%;
+  height: 1px;
+  background: #d0d0d0;
+  margin-top:-63rpx; 
+  margin-left:5rpx;
+}
+.service .title .you .yuan{
+ font-family: '微软雅黑';
+  font-size: 15rpx;
+  color: #d0d0d0;
+  margin-top: -65rpx;
+  margin-left: 5rpx;
+}
+
+
+.service .se{
+  width: 90%;
+  margin: auto;
+}
+
+/*-------------------服务内容 开始---------------------*/
+.service .se .meige{
+  margin: 20px 0;
+  border-bottom: 1px #d0d0d0 dashed;
+}
+
+.service .se .meige navigator .title{
+   position: relative;
+   height:117rpx;
+}
+
+.service .se .meige navigator .title .zw{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  font-family: '微软雅黑';
+  color: #5b5b5b;
+  font-size:40rpx;
+}
+
+.service .se .meige navigator .title .yw{
+  position: absolute;
+  top:55rpx;
+  left: 0px;
+  font-family: '微软雅黑';
+  color: #5b5b5b;
+  font-size:24rpx;
+  font-weight: 100;
+}
+
+.service .se .meige navigator .tw image{
+  width: 100%;
+}
+.service .se .meige navigator .tw text{
+  font-family: '微软雅黑';
+  color: #5b5b5b;
+  font-size:32.76rpx;
+  margin-top:23.4rpx;
+  margin-bottom:46.8rpx;
+
+  overflow: hidden; 
+  display: -webkit-box;  
+  word-break: break-all;  
+  text-overflow: ellipsis;  
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

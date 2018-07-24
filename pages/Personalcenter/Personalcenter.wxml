@@ -1,0 +1,49 @@
+<!--pages/Personal center/Personal center.wxml-->
+<view class='top'>
+            <view class='top-content'>
+                        <view class='tupian'>
+                        <image src='https://ssl.resonance.net.cn/test/images/touxiang.png' mode= 'widthFix' style='width:100rpx; height:100rpx; '  ></image>
+                        </view>
+                        <text>请先登录</text>
+
+                        <navigator url='/pages/Signin/Signin'  open-type='navigate'>
+                        <image class='jiantou' src='https://ssl.resonance.net.cn/test/images/jiantou.png' style= 'width:20rpx; height:40rpx;'></image>
+                         </navigator>
+
+            </view>
+</view >
+
+
+
+<navigator url='/pages/Order/Order'  open-type="navigate">
+    <view class='row'>
+             <image src='https://ssl.resonance.net.cn/test/images/wd01.png' mode='widthFix' style='width:20px; height:24px;'>
+             </image>
+            <text>我的订单</text>
+    </view>
+</navigator>
+
+<navigator url='/pages/ShoppingCart/ShoppingCart'  open-type="navigate">
+<view class='row'>
+            <image src='https://ssl.resonance.net.cn/test/images/wd02.png' mode='widthFix' style='width:20px; height:24px;'>
+        
+            </image>
+            <text>我的购物车</text>
+</view>
+</navigator>
+
+
+<navigator url='/pages/address/address'  open-type="navigate">
+
+<view class='row'>
+            <image src='https://ssl.resonance.net.cn/test/images/wd03.png' mode='widthFix' style='width:20px; height:24px;'>
+        
+            </image>
+            <text>收货地址</text>
+</view>
+
+</navigator>
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />

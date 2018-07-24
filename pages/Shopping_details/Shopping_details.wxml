@@ -1,0 +1,25 @@
+<!--pages/Shopping_details/Shopping_details.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='det'>
+  <image src='https://ssl.resonance.net.cn/test/{{banner.img_path}}' mode='widthFix'></image>
+  <text class='biaot'>{{all.title}}\n</text>
+  <text class='rq'>￥{{all.price}}\n</text>
+
+  <view class="wxParse neir">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+   </view>
+
+
+ <!--<text class='neir'>广西新影响华文文化创意有限公司，创立于2006年，隶属新影响文化投资集团，中国创意50强，曾获中国广告节长城奖金奖，是广西“文化产业示范基地”。擅长集结各类优秀资源，在品牌建设、整合营销、公关活动、创</text>-->
+
+
+</view>
+
+<view class='dibu'>
+  <button class='jr' bindtap="addcart" id='{{all.id}}'>加入购物车</button>
+
+ <!--<navigator url='/pages/Paymentorder/Paymentorder?id={{all.id}}&ljgmmm=1'  open-type="navigate">-->
+  <button class='gm'  bindtap="buynow" id='{{all.id}}'>立即购买</button>
+  <!-- </navigator>-->
+
+</view>

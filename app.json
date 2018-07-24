@@ -1,0 +1,38 @@
+{
+  "pages":[
+      "pages/ShoppingCart/ShoppingCart",
+    "pages/index/index",
+    "pages/address/address",
+      "pages/classification_all/classification_all",
+  "pages/classification/classification",
+
+    "pages/contact/contact",
+
+    "pages/Paymentorder/Paymentorder",
+    "pages/Order/Order",
+    "pages/Service/Service",
+    "pages/case/case",
+  
+  
+    "pages/edit/edit",
+    "pages/xinzeng/xinzeng",
+    "pages/jiey/directory",
+    "pages/Personalcenter/Personalcenter",
+    "pages/project/project",
+
+    "pages/about/about",
+	  "pages/html/html",
+    "pages/new/new",
+    "pages/details/details",
+    "pages/Shopping_details/Shopping_details",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "共振商城",
+    "navigationBarTextStyle":"black"
+  },
+  "debug": false
+
+}

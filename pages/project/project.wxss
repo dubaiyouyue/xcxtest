@@ -1,0 +1,136 @@
+/* pages/project/project.wxss */
+.bt{
+  width:30%;
+  margin: auto;
+  height: 60rpx;
+  border: 1px #e5e3e3 solid;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bt text{
+ color: #e40000;
+ font-family: "微软雅黑";
+ font-size: 32rpx;
+  
+}
+
+
+
+
+.ner{
+  width: 100%;
+  background: #efeff4;
+  padding-bottom: 150rpx;
+}
+
+.ner .fenkai{
+  padding: 40rpx 0;
+  width: 85%;
+  margin: auto;
+}
+
+.ner .fenkai navigator image{
+  width: 100%;
+}
+
+.ner .fenkai navigator .tittle{
+  width: 100%;
+  background: #fff;
+  height:70rpx;
+  margin-top: -3rpx;
+  display: flex;
+
+}
+
+.ner .fenkai navigator .tittle .biaoti{
+  width:60%;
+  font-family: "微软雅黑";
+  font-size: 35rpx;
+  color: #1a0303;
+  line-height: 70rpx;
+  margin-left: 20rpx;
+
+  overflow: hidden; 
+  display: -webkit-box;  
+  word-break: break-all;  
+  text-overflow: ellipsis;  
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 1;
+}
+.ner .fenkai navigator .tittle image{
+  width: 9%;
+  margin-top:9rpx;
+}
+
+.ner .fenkai navigator .tittle .rq{
+  width:25%;
+  font-family: "微软雅黑";
+  font-size:35rpx;
+  color:red;
+  line-height: 74rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

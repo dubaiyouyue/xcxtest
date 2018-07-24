@@ -1,0 +1,93 @@
+<!--pages/classification_all/classification_all.wxml-->
+<view class='all'>
+<!-----------------搜索框 开始----------------------->
+
+  <!-----------------搜索框 结束----------------------->
+       <form bindsubmit="formSubmit">
+   <view class='ssk'>
+    <view class='kuang'>
+      <input class='input' placeholder-class="jj" placeholder="请输入您想搜索的" name="keyword"/>
+      <button class='aniu' style='background: url(https://ssl.resonance.net.cn/up/upload/52621515137739.png);background-repeat:no-repeat;background-size:contain;background-position:center center;' formType="submit"></button>
+    </view>
+  </view>
+   </form>
+  
+  <!-----------------二级导航 开始----------------------->
+  <view class='nav'>
+
+    <navigator url="/pages/classification/classification">
+      <view class='dg'>
+        <text>推荐</text>
+      </view>
+    </navigator>
+
+    <navigator url="/pages/classification_all/classification_all">
+      <view class='dg  dq'>
+        <text>全部</text>
+      </view>
+    </navigator>
+
+
+  </view>
+  <!-----------------二级导航 结束----------------------->
+
+<!----全部分类-->
+
+  <view class='fenk{{vv}}'>
+
+<block wx:for="{{all}}">
+  <view class='dg'>
+        <navigator url="/pages/project/project?id={{item.id}}" open-type="navigate">
+          <image src='https://ssl.resonance.net.cn/test/{{item.columnimg}}' mode='widthFix'></image>
+          <view class='beij'><text>{{item.name}}</text></view>
+        </navigator>
+      </view>
+ </block>
+
+
+  </view>
+
+
+
+
+<!----搜索-->
+
+
+ <view class='ner{{hh}}'>
+<block wx:for="{{keyword}}">
+    <view class='fenkai'>
+      <navigator url="/pages/Shopping_details/Shopping_details?id={{item.id}}&class1={{item.class1}}" open-type="navigate">
+        <image src='https://ssl.resonance.net.cn/test/{{item.imgurl}}' mode='widthFix'></image>
+        <view class='tittle'>
+          <text class='biaoti'>{{item.title}}</text>
+          <text class='rq'>￥{{item.price}}</text>
+          
+        </view>
+      </navigator>
+
+      <block wx:if="{{item.id==id}}">
+         <image src='https://ssl.resonance.net.cn/test/images/3.3.png' mode='widthFix' style='width:9%;margin:-60rpx 20rpx 0 0;float:right;' bindtap='addcart' data-id="{{item.id}}"></image>
+        </block>
+
+          <block wx:else>
+                    <image src='https://ssl.resonance.net.cn/test/images/3.png' mode='widthFix' style='width:9%;margin:-60rpx 20rpx 0 0;float:right;' bindtap='addcart' data-id="{{item.id}}"></image>
+          </block>
+          
+    </view>
+</block>
+  </view>
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />

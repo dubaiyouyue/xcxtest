@@ -1,0 +1,21 @@
+<!--pages/details/details.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='det'>
+  <image src='https://ssl.resonance.net.cn/test/{{banner.img_path}}' mode='widthFix'></image>
+  <text class='biaot'>{{all.title}}\n</text>
+  <text class='rq'>{{all.addtime}}\n</text>
+ <!-- <text class='neir'>{{all.content}}</text>-->
+
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+
+</view>
+</view>
+
+
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />

@@ -1,0 +1,84 @@
+<!--pages/Shopping Cart/Shopping Cart.wxml-->
+<view class='quanxuan'>
+          <view class='left'>
+
+                    <view wx:if="{{selectAllStatus}}" class='xuankuang'  bindtap='selectAll'><image src='https://ssl.resonance.net.cn/test/images/redyes.jpg' mode='widthFix' style='width:48rpx;height:48rpx;'></image> </view>
+                    <view wx:else class='xuankuang'  bindtap='selectAll'><image src='https://ssl.resonance.net.cn/test/images/redno.jpg' mode='widthFix' style='width:48rpx;height:48rpx;'></image> </view>
+
+
+
+                    <text>全选</text>
+           </view>      
+           <text class="pice{{jzzzs}}">正在删除中。。。</text>   
+          <view class='tup'  bindtap='deletes'  data-ss='{{slistid}}'  data-ii='{{index}}'>
+                    <image src='https://ssl.resonance.net.cn/test/images/shanchu.png' mode='widthFix'></image>
+          </view>
+</view>
+
+
+<view class='libiao' style='padding-bottom:225rpx;'>
+<block wx:for="{{all}}">
+<view class='dingdan'>
+
+
+<view wx:if="{{item.selected}}" class='xuanze' bindtap="selectList" data-index="{{index}}"  data-id="{{item.id}}">  <image src='https://ssl.resonance.net.cn/test/images/redyes.jpg' mode='widthFix' style='width:48rpx;height:48rpx;'></image></view>
+
+<view wx:else class='xuanze' bindtap="selectList" data-index="{{index}}" data-id="{{item.id}}" >  <image src='https://ssl.resonance.net.cn/test/images/redno.jpg' mode='widthFix' style='width:48rpx;height:48rpx;'></image></view>
+
+
+
+
+
+          <view class='xiangqing'>
+                    <view class='tu'>
+                              <image src='https://ssl.resonance.net.cn/test/{{item.imgurl}}' style='height:170rpx' ></image>
+                    </view>
+                    <view class='text'>
+                              <view class='text-one'>
+                                          <text>{{item.title}}</text>
+                                          <text class='jiaqian'>￥{{item.price}}</text>
+                              </view>
+                              <view class='text-two'>
+                                        <text class='description'>{{item.description}}</text>
+                              </view>
+                              <view class='text-three'>
+                                        <view class='jian' bindtap="bindsubtract" data-id="{{item.id}}" data-hi="{{index}}">
+                                                  <image src='https://ssl.resonance.net.cn/test/images/jian.png' mode='widthFix'></image>
+                                        </view>
+                                                    <view class='input'>
+                                                              <input type='number' value='{{item.num}}' name="{{item.num}}" data-id="{{index}}"></input>
+                                                    </view>
+                                        <view class='jia' bindtap="bindadd" data-id="{{item.id}}"   data-hi="{{index}}" >
+                                                  <image src='https://ssl.resonance.net.cn/test/images/jia.png' mode='widthFix'></image>
+                                        </view>
+                              </view>
+                    </view>
+
+          </view>
+    
+</view>
+</block>
+</view>
+
+
+
+
+
+<view class='jiesuan'>
+          <view class='text'>
+                    <text>总计：</text>       
+                    <text class='qian'>￥{{totalPrice}}</text>   
+          </view>
+
+      <!-- <navigator url='/pages/Paymentorder/Paymentorde?id={{all.id}}' open-type="navigate">-->
+          <view class='button'>
+                    <button type='primary' bindtap='jiesuan'>结算</button>
+                    <text></text>
+          </view>
+        <!--  </navigator>-->
+
+          
+</view>
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />

@@ -1,0 +1,93 @@
+<!-------------banner 开始-------------->
+<image style='width:100%;' src='https://ssl.resonance.net.cn/test/{{banner.img_path}}' mode="widthFix" ></image>
+<!-------------banner 结束-------------->
+
+
+<view class="case" style="background:url('https://hhh.liangtianmei.com/images/bjjj.png');">
+  <!-------------标题 开始-------------->
+  <view class='title'>
+    <view class='zuo'>
+      <view class='xian'></view>
+      <view class='yuan'>●</view>
+    </view>
+
+    <view class='wz'>
+      <text class='yw'>CASE SHARING\n</text>
+      <text class='zw'>成功案例\n</text>
+    </view>
+
+    <view class='you'>
+      <view class='yuan'>●</view>
+      <view class='xian'></view>
+    </view>
+  </view>
+  <!-------------标题 结束-------------->
+
+
+  <!-------------成功案例 开始-------------->
+  <view class='fenb'>
+<block wx:for="{{all}}">
+   <navigator url='/pages/details/details?id={{item.id}}&class1={{item.class1}}'  open-type="navigate">
+      <view style="background:url('https://ssl.resonance.net.cn/up/upload/34711514874215.png');background-repeat:no-repeat;background-size:100%;background-position:center center;" class='dg'>
+        <image src='https://ssl.resonance.net.cn/test/{{item.imgurl}}' mode='widthFix'></image>
+      </view>
+    </navigator>
+    </block>
+
+  <!--
+    <navigator url='/pages/details/details'  open-type="navigate">
+      <view style="background:url('https://ssl.resonance.net.cn/up/upload/34711514874215.png');background-repeat:no-repeat;background-size:100%;background-position:center center;" class='dg'>
+        <image src='../../images/ca1.jpg' mode='widthFix'></image>
+      </view>
+    </navigator>
+
+
+    <navigator url='/pages/details/details'  open-type="navigate">
+      <view style="background:url('https://ssl.resonance.net.cn/up/upload/34711514874215.png');background-repeat:no-repeat;background-size:100%;background-position:center center;" class='dg'>
+        <image src='../../images/ca1.jpg' mode='widthFix'></image>
+      </view>
+    </navigator>
+
+    <navigator url='/pages/details/details'  open-type="navigate">
+      <view style="background:url('https://ssl.resonance.net.cn/up/upload/34711514874215.png');background-repeat:no-repeat;background-size:100%;background-position:center center;" class='dg'>
+        <image src='../../images/ca1.jpg' mode='widthFix'></image>
+      </view>
+    </navigator>
+
+    <navigator url='/pages/details/details'  open-type="navigate">
+      <view style="background:url('https://ssl.resonance.net.cn/up/upload/34711514874215.png');background-repeat:no-repeat;background-size:100%;background-position:center center;" class='dg'>
+        <image src='../../images/ca1.jpg' mode='widthFix'></image>
+      </view>
+    </navigator>
+
+     <navigator url='/pages/details/details'  open-type="navigate">
+      <view style="background:url('https://ssl.resonance.net.cn/up/upload/34711514874215.png');background-repeat:no-repeat;background-size:100%;background-position:center center;" class='dg'>
+        <image src='../../images/ca1.jpg' mode='widthFix'></image>
+      </view>
+    </navigator>
+
+    <navigator url='/pages/details/details'  open-type="navigate">
+      <view style="background:url('https://ssl.resonance.net.cn/up/upload/34711514874215.png');background-repeat:no-repeat;background-size:100%;background-position:center center;" class='dg'>
+        <image src='../../images/ca1.jpg' mode='widthFix'></image>
+      </view>
+    </navigator>
+
+    <navigator url='/pages/details/details'  open-type="navigate">
+      <view style="background:url('https://ssl.resonance.net.cn/up/upload/34711514874215.png');background-repeat:no-repeat;background-size:100%;background-position:center center;" class='dg'>
+        <image src='../../images/ca1.jpg' mode='widthFix'></image>
+      </view>
+    </navigator>
+    -->
+    
+  </view>
+  <!-------------成功案例 结束-------------->
+
+</view>
+
+
+
+
+<import src="../template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />
+
+
